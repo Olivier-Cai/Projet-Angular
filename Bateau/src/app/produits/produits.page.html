@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>produits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="backgroundImage">
+  <ion-text class="produitTitre">
+    <p>Choisissez vos produits</p>
+  </ion-text>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/produits']" class="button_content">
+          <img alt="poissons" id="poissons" height="50" width="50" slot="start" src="assets/poulpe.png">Poissons
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/produits']" class="button_content">
+          <img alt="coquillages" id="coquillages" height="50" width="50" slot="start" src="assets/poulpe.png">Coquillages
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/produits']" class="button_content">
+          <img alt="crustaces" id="crustaces" height="50" width="50" slot="start" src="assets/poulpe.png">Crustacés
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/produits']" class="button_content">
+          <img alt="promotions" id="promotions" height="50" width="50" slot="start" src="assets/poulpe.png">Promotions
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

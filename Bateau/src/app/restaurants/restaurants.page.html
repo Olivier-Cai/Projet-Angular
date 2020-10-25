@@ -1,0 +1,65 @@
+<ion-content class="backgroundImage">
+  <ion-text>
+    <p class="title">Restaurants partenaires</p>
+    <p class="description">Tous les restaurants partenaires avec le bateau de Thibault</p>
+    <p class="telephone">06.63.99.99.78</p>
+    <p class="mailfacebook">
+      lebateaudethibault@gmail.com<br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </ion-text>
+  <ion-grid *ngIf="restaurants && restaurants.length">
+    <ion-row>
+      <ion-col size=6 *ngFor="let restaurant of restaurants">
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" [src]="restaurant.image_icon">{{restaurant.name}}
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/contact']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/poulpe.png">Devenez Partenaire!
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- autre methode pour l'affichage
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/desGascons_icon.png">Bistrot des Gascons
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/fousDeLIle_icon.png">Les fous de l'île
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/bistrotLandais_icon.png">Bistrot Landais
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/villa9Trois_icon.png">Villa 9-Trois
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/restaurant-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/duSommelier.png">Bistrot du Sommelier
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/contact']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/poulpe.png">Devenez Partenaire!
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+</ion-content>
+  

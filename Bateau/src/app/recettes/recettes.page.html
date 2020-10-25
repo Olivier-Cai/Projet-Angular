@@ -1,0 +1,60 @@
+<ion-content class="backgroundImage">
+  <ion-text>
+    <p class="title">Nos recettes</p>
+    <p class="description">Toutes les recettes du bateau de Thibault</p>
+    <p class="telephone">06.63.99.99.78</p>
+    <p class="mailfacebook">
+      lebateaudethibault@gmail.com<br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </ion-text>
+  <ion-grid *ngIf="recettes && recettes.length">
+    <ion-row>
+      <ion-col size=6 *ngFor="let recette of recettes">
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" [src]="recette.image_icon">{{recette.icon_name}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- autre methode pour l'affichage
+  <ion-grid>  
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/homardRecette_icon.png">Homard
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/saintJacques_icon.png">St Jacques
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/barRecette_icon.png">Bar
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/tourteau.png">Tourteau
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/poulpe.png">Recette
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/recette-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/poulpe.png">Recette
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+</ion-content>
