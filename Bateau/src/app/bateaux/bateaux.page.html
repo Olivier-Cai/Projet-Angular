@@ -1,0 +1,63 @@
+<ion-content class="backgroundImage">
+  <ion-text>
+    <p class="title">Nos bateaux partenaires</p>
+  </ion-text>
+  <ion-text>
+    <p class="description">Tous les eaux mènent à Thibault</p>
+  </ion-text>
+  <ion-text>
+    <p class="telephone">06.63.99.99.78</p>
+    <p class="mailfacebook">
+      lebateaudethibault@gmail.com<br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </ion-text>
+  <ion-grid *ngIf="bateaux && bateaux.length">
+    <ion-row>
+      <ion-col size=6 *ngFor="let bateau of bateaux">
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/bateau-detail']" class="button_content">
+          <img height="50" width="50" slot="start" [src]="bateau.image_icon">{{bateau.name}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  <!-- autre methode pour l'affichage
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/bateau-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/deLaBrise_icon.png">De la Brise
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/bateau-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/saphir_icon.png">Saphir
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/bateau-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/gastMicher_icon.png">Gast Micher
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/bateau-detail']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/aquilon_icon.png">Aquilon
+        </ion-button>
+      </ion-col>
+    </ion-row> -->
+     <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/contact']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/ancre.png">Contact
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" fill="outline" size="large" [routerLink]="['/contact']" class="button_content">
+          <img height="50" width="50" slot="start" src="assets/ancre.png">Contact
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+  

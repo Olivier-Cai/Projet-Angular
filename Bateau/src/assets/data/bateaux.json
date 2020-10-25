@@ -1,0 +1,37 @@
+[
+    {
+        "name" : "De la Brise",
+        "image" : "../assets/deLaBrise.png",
+        "image_icon" : "../assets/deLaBrise_icon.png"
+        },
+    
+        {
+        "name" : "Saphir",
+        "image" : "../assets/saphir.png",
+        "image_icon" : "../assets/saphir_icon.png"
+        },
+    
+        {
+        "name" : "Gast Micher",
+        "image" : "../assets/gastMicher.png",
+        "image_icon" : "../assets/gastMicher_icon.png"
+        },
+    
+        {
+        "name" : "Aquilon",
+        "image" : "../assets/aquilon.png",
+        "image_icon" : "../assets/aquilon_icon.png"
+        },
+    
+        {
+        "name" : "Contact",
+        "image" : "../assets/ancre.png",
+        "image_icon" : "../assets/ancre.png"
+        },
+    
+        {
+        "name" : "Contact",
+        "image" : "../assets/ancre.png",
+        "image_icon" : "../assets/ancre.png"
+        }
+]

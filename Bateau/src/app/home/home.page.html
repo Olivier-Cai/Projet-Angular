@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true"class="backgroundImage">
+  <ion-text>
+    <h1 class="title">Le bateau de Thibault</h1>
+    <p class="description">
+      Vente en direct de notre bateau<br>
+      Produits selon la saison, Livraisons sur Paris
+    </p>
+    <p class="telephone">06.63.99.99.78</p>
+    <p class="mailfacebook">
+      lebateaudethibault@gmail.com<br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </ion-text>  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" fill="outline" [routerLink]="['/produits']" class="button_content">
+          <img alt="poisson" id="poisson" height="50" width="50" slot="start" src="assets/poisson.png">Prodtuis et promotions
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+          <ion-button expand="block" fill="outline" [routerLink]="['/bateaux']" class="button_content">
+            <img height="50" width="50" src="assets/ancre.png">Bateaux
+          </ion-button>
+      </ion-col>
+      <ion-col size="6">
+          <ion-button expand="block" fill="outline" [routerLink]="['/restaurants']" class="button_content">
+            <img height="50" width="50" src="assets/restaurant.png">Restaurants
+          </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-button expand="block" fill="outline" [routerLink]="['/recettes']" class="button_content">
+            <img height="50" width="50" src="assets/recette.png">Recettes
+          </ion-button>
+      </ion-col>
+        <ion-col>
+          <ion-button expand="block" fill="outline" [routerLink]="['/contact']" class="button_content">
+            <img height="50" width="50" src="assets/poulpe.png">Contact
+          </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
